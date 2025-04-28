@@ -9,7 +9,7 @@ function App() {
       <main>
         <header>
           <nav>
-            <NavLink to="/" data-cy="home">
+            <NavLink to="/">
               <h1 data-cy="title">Tea Subscriptions</h1>
             </NavLink>
             {useMatch("/:id") && (
