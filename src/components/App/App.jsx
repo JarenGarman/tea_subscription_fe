@@ -29,7 +29,7 @@ function App() {
                 </select>
               </div>
             )}
-            {useMatch("/:id") && (
+            {useMatch("/subscriptions/:id") && (
               <Link to="/" data-cy="home">
                 ⌂
               </Link>
@@ -38,8 +38,8 @@ function App() {
         </header>
 
         <Routes>
-          <Route path="/" element={<Home sort={sort} />} />
-          <Route path="/:id" element={<Details />} />
+          <Route index element={<Home sort={sort} />} />
+          <Route path="/subscriptions/:id" element={<Details />} />
           <Route
             path="*"
             element={

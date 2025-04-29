@@ -3,7 +3,7 @@ import "./Subscription.css";
 
 function Subscription({ id, title, price, image_url }) {
   return (
-    <Link to={`/${id}`}>
+    <Link to={`/subscriptions/${id}`}>
       <article className="sub-article">
         <img src={image_url} alt={`${title} Image`} className="sub-image" />
         <h2 className="sub-title">{title}</h2>
