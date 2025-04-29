@@ -17,7 +17,8 @@ function App() {
               <h1 data-cy="title">Tea Subscriptions</h1>
             </NavLink>
             {useMatch("/") && (
-              <div>
+              <div className="sort-container">
+                <label>Sort by: </label>
                 <select
                   onChange={(e) => setSort(e.target.value)}
                   defaultValue={sort}
