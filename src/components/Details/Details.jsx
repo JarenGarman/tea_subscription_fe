@@ -25,7 +25,7 @@ function Details() {
         price={sub.data.attributes.price}
         image_url={sub.data.attributes.image_url}
       />
-      <Teas />
+      <Teas teas={sub.included} />
       <CustomerSubscriptions />
     </article>
   );
