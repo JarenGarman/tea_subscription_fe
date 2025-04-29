@@ -1,7 +1,5 @@
 .subscriptions-container > a {
   margin: 0.5em;
-  border: 0.1em solid #11111b;
-  border-radius: 1em;
 }
 
 .sub-article:hover {

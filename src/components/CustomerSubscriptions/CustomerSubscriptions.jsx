@@ -1,5 +1,5 @@
-import "./CustomerSubscriptions.css";
 import CustomerSubscription from "../CustomerSubscription/CustomerSubscription";
+import "./CustomerSubscriptions.css";
 
 function CustomerSubscriptions({ subs }) {
   const subComponents = subs.map((sub) => {
@@ -16,7 +16,7 @@ function CustomerSubscriptions({ subs }) {
   return (
     <section className="customer-subs">
       <h2>Customers</h2>
-      {subComponents}
+      <div>{subComponents}</div>
     </section>
   );
 }

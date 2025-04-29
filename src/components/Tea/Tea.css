@@ -1,3 +1,8 @@
+.tea-article {
+  background-color: #313244;
+  margin: 0.5em;
+}
+
 .tea-description {
   max-width: 20vw;
 }
