@@ -1,6 +1,6 @@
 const baseURL = "http://localhost:3000/api/v1/";
 
-export function getSubscriptions(sort = null) {
+export function getSubscriptions(sort) {
   let url = baseURL + "subscriptions";
 
   if (sort) {
