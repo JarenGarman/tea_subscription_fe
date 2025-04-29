@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink, Route, Routes, useMatch } from "react-router";
+import { Link, Route, Routes, useMatch } from "react-router";
 import Details from "../Details/Details";
 import Home from "../Home/Home";
 import "./App.css";
@@ -12,10 +12,10 @@ function App() {
     <>
       <main>
         <header>
+          <Link to="/">
+            <h1 data-cy="title">Tea Subscriptions</h1>
+          </Link>
           <nav>
-            <NavLink to="/">
-              <h1 data-cy="title">Tea Subscriptions</h1>
-            </NavLink>
             {useMatch("/subscriptions/:id") && (
               <Link to="/" data-cy="home">
                 ⌂
