@@ -16,25 +16,25 @@ function App() {
             <NavLink to="/">
               <h1 data-cy="title">Tea Subscriptions</h1>
             </NavLink>
-            {useMatch("/") && (
-              <div className="sort-container">
-                <label>Sort by: </label>
-                <select
-                  onChange={(e) => setSort(e.target.value)}
-                  defaultValue={sort}
-                >
-                  {sortOptions.map((option, idx) => (
-                    <option key={idx}>{option}</option>
-                  ))}
-                </select>
-              </div>
-            )}
             {useMatch("/subscriptions/:id") && (
               <Link to="/" data-cy="home">
                 ⌂
               </Link>
             )}
           </nav>
+          {useMatch("/") && (
+            <div className="sort-container">
+              <label>Sort by: </label>
+              <select
+                onChange={(e) => setSort(e.target.value)}
+                defaultValue={sort}
+              >
+                {sortOptions.map((option, idx) => (
+                  <option key={idx}>{option}</option>
+                ))}
+              </select>
+            </div>
+          )}
         </header>
 
         <Routes>
