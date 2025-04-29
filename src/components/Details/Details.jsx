@@ -26,7 +26,7 @@ function Details() {
         image_url={sub.data.attributes.image_url}
       />
       <Teas teas={sub.included} />
-      <CustomerSubscriptions />
+      <CustomerSubscriptions subs={sub.data.attributes.customer_subscriptions.data} />
     </article>
   );
 }

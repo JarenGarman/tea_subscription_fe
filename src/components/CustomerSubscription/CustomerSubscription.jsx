@@ -1,6 +1,6 @@
 import "./CustomerSubscription.css";
 
-function CustomerSubscription() {
+function CustomerSubscription({ id, status, customer }) {
   return;
 }
 
