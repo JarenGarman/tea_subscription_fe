@@ -3,15 +3,20 @@ import { getSubscriptions } from "../../apiCalls";
 import Subscription from "../Subscription/Subscription";
 import "./Home.css";
 
-function Home() {
+function Home({ sort }) {
   const [subscriptions, setSubscriptions] = useState([]);
   let subComponents;
 
   useEffect(() => {
-    getSubscriptions().then((subscriptions) =>
+    const sortOptions = {
+      Default: null,
+      "Price: High to Low": "desc",
+      "Price: Low to High": "asc",
+    };
+    getSubscriptions(sortOptions[sort]).then((subscriptions) =>
       setSubscriptions(subscriptions.data)
     );
-  }, []);
+  }, [sort]);
 
   subComponents = subscriptions.map((sub) => {
     return (

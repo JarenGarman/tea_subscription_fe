@@ -1,9 +1,13 @@
+import { useState } from "react";
 import { Link, NavLink, Route, Routes, useMatch } from "react-router";
 import Details from "../Details/Details";
 import Home from "../Home/Home";
 import "./App.css";
 
 function App() {
+  const sortOptions = ["Default", "Price: High to Low", "Price: Low to High"];
+  const [sort, setSort] = useState(sortOptions[0]);
+
   return (
     <>
       <main>
@@ -12,6 +16,18 @@ function App() {
             <NavLink to="/">
               <h1 data-cy="title">Tea Subscriptions</h1>
             </NavLink>
+            {useMatch("/") && (
+              <div>
+                <select
+                  onChange={(e) => setSort(e.target.value)}
+                  defaultValue={sort}
+                >
+                  {sortOptions.map((option, idx) => (
+                    <option key={idx}>{option}</option>
+                  ))}
+                </select>
+              </div>
+            )}
             {useMatch("/:id") && (
               <Link to="/" data-cy="home">
                 ⌂
@@ -21,7 +37,7 @@ function App() {
         </header>
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home sort={sort} />} />
           <Route path="/:id" element={<Details />} />
           <Route
             path="*"
