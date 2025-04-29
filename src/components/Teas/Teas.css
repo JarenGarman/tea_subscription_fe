@@ -1,0 +1,13 @@
+.teas-section {
+  flex-direction: column;
+  background-color: #1e1e2e;
+  align-self: stretch;
+  margin-top: 1em;
+}
+
+.teas-section > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}

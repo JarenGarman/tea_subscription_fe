@@ -1,0 +1,8 @@
+.tea-description {
+  max-width: 20vw;
+}
+
+.tea-description,
+.tea-brew-time {
+  margin: 0.3em;
+}
