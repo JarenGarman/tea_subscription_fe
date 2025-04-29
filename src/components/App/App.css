@@ -2,4 +2,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #181825;
+  border-radius: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 1em;
 }

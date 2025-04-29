@@ -6,20 +6,27 @@ html {
 section {
   background-color: #181825;
   flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 article {
   background-color: #1e1e2e;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 section,
 article {
-  border: 1px solid #cba6f7;
-  border-radius: 1em;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  padding: 1em;
+  /* margin: 1em; */
+}
+
+section,
+article,
+img {
+  border-radius: 1em;
 }
 
 a {
