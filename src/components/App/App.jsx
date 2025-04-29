@@ -17,8 +17,8 @@ function App() {
           </Link>
           <nav>
             {useMatch("/subscriptions/:id") && (
-              <Link to="/" data-cy="home">
-                ⌂
+              <Link to="/">
+                <h1 data-cy="home">⌂</h1>
               </Link>
             )}
           </nav>
