@@ -11,3 +11,11 @@ export function getSubscriptions(sort = null) {
     .then((response) => response.json())
     .catch((e) => console.error(e));
 }
+
+export function getSubscription(id) {
+  const url = baseURL + "subscriptions/" + id;
+
+  return fetch(url)
+    .then((response) => response.json())
+    .catch((e) => console.error(e));
+}
