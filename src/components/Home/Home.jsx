@@ -5,7 +5,7 @@ import "./Home.css";
 
 function Home() {
   const [subscriptions, setSubscriptions] = useState([]);
-  let subComponents
+  let subComponents;
 
   useEffect(() => {
     getSubscriptions().then((subscriptions) =>
@@ -18,9 +18,9 @@ function Home() {
       <Subscription
         key={sub.id}
         id={sub.id}
-        title={sub.title}
-        price={sub.price}
-        image_url={sub.image_url}
+        title={sub.attributes.title}
+        price={sub.attributes.price}
+        image_url={sub.attributes.image_url}
       />
     );
   });
