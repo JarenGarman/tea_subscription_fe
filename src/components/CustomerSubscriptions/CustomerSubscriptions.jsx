@@ -7,8 +7,8 @@ function CustomerSubscriptions({ subs }) {
       <CustomerSubscription
         key={sub.id}
         id={sub.id}
-        status={sub.attributes.status}
-        customer={sub.attributes.customer.data}
+        initialStatus={sub.attributes.status}
+        customer={sub.attributes.customer.data.attributes}
       />
     );
   });
