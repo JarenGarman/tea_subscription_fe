@@ -1,0 +1,45 @@
+html {
+  background-color: #11111b;
+  color: #cdd6f4;
+}
+
+section {
+  background-color: #181825;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+article {
+  background-color: #1e1e2e;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section,
+article {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+
+section,
+article,
+img {
+  border-radius: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #cdd6f4;
+}
+
+p,
+h4,
+h5 {
+  color: #a6adc8;
+}
+
+h2,
+h3 {
+  color: #bac2de;
+}

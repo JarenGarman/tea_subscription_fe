@@ -1,0 +1,5 @@
+.sub-section {
+  flex-direction: column;
+  background-color: #1e1e2e;
+  align-self: stretch;
+}

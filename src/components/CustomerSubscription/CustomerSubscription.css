@@ -1,0 +1,16 @@
+.customer-sub {
+  background-color: #313244;
+  margin: 0.5em;
+}
+
+.customer-address {
+  max-width: 20vw;
+}
+
+.customer-address,
+.customer-email,
+.toggle-status,
+.status,
+.customer-name {
+  margin: 0.3em;
+}

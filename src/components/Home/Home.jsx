@@ -34,7 +34,7 @@ function Home({ sort }) {
     return <h2>Loading...</h2>;
   }
 
-  return <div className="subscriptions-container">{subComponents}</div>;
+  return <section className="subscriptions-container">{subComponents}</section>;
 }
 
 export default Home;

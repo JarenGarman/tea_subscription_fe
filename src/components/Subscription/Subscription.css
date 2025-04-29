@@ -1,0 +1,7 @@
+.subscriptions-container > a {
+  margin: 0.5em;
+}
+
+.sub-article:hover {
+  transform: scale(1.02);
+}
