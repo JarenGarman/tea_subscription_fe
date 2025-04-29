@@ -5,7 +5,6 @@ function Teas({ teas }) {
   const teaComponents = teas.map((tea) => {
     return <Tea
       key={tea.id}
-      id={tea.id}
       title={tea.attributes.title}
       description={tea.attributes.description}
       brew_time={tea.attributes.brew_time}
