@@ -48,4 +48,42 @@ describe("Detailed Page", () => {
       .find("p")
       .should("contain", "$83.12");
   });
+
+  it("Displays subscription teas", () => {
+    cy.getBySel("teas-section")
+      .find(".tea-title")
+      .first()
+      .should("contain", "Dianhong")
+
+      .getBySel("teas-section")
+      .find(".tea-brew-time")
+      .first()
+      .should("contain", "5 minutes")
+
+      .getBySel("teas-section")
+      .find(".tea-description")
+      .first()
+      .should(
+        "contain",
+        "Et sequi blanditiis. Et ut sed. Magni consectetur vel."
+      )
+
+      .getBySel("teas-section")
+      .find(".tea-title")
+      .last()
+      .should("contain", "Darjeeling")
+
+      .getBySel("teas-section")
+      .find(".tea-brew-time")
+      .last()
+      .should("contain", "8 minutes")
+
+      .getBySel("teas-section")
+      .find(".tea-description")
+      .last()
+      .should(
+        "contain",
+        "Eius blanditiis sit. Est non incidunt. Libero unde rerum."
+      );
+  });
 });
