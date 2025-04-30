@@ -24,10 +24,11 @@ function App() {
           </nav>
           {useMatch("/") && (
             <div className="sort-container">
-              <label>Sort by: </label>
+              <label data-cy="sort-label">Sort by: </label>
               <select
                 onChange={(e) => setSort(e.target.value)}
                 defaultValue={sort}
+                data-cy="sort-select"
               >
                 {sortOptions.map((option, idx) => (
                   <option key={idx}>{option}</option>
