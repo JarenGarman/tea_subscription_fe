@@ -8,3 +8,7 @@ header {
   padding-right: 1em;
   margin-bottom: 1em;
 }
+
+.error-message {
+  flex-direction: column;
+}
