@@ -1,0 +1,9 @@
+{
+  "data": {
+    "id": "6",
+    "type": "customer_subscription",
+    "attributes": {
+      "status": "inactive"
+    }
+  }
+}

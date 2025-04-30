@@ -1,0 +1,193 @@
+{
+  "data": {
+    "id": "1",
+    "type": "subscription",
+    "attributes": {
+      "title": "commodi",
+      "price": 83.12,
+      "image_url": "https://loremflickr.com/300/300",
+      "customer_subscriptions": {
+        "data": [
+          {
+            "id": "1",
+            "type": "customer_subscription",
+            "attributes": {
+              "status": "inactive",
+              "customer": {
+                "data": {
+                  "id": "3",
+                  "type": "customer",
+                  "attributes": {
+                    "first_name": "Kaley",
+                    "last_name": "Hand",
+                    "email": "melina@terry-stamm.example",
+                    "address": "33343 Solomon Ridge, Hyattchester, CO 36994-5015"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": "2",
+            "type": "customer_subscription",
+            "attributes": {
+              "status": "active",
+              "customer": {
+                "data": {
+                  "id": "2",
+                  "type": "customer",
+                  "attributes": {
+                    "first_name": "Darnell",
+                    "last_name": "Kshlerin",
+                    "email": "latina@mohr-wintheiser.test",
+                    "address": "22552 Wilda Gateway, Townetown, VT 02347"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": "3",
+            "type": "customer_subscription",
+            "attributes": {
+              "status": "active",
+              "customer": {
+                "data": {
+                  "id": "6",
+                  "type": "customer",
+                  "attributes": {
+                    "first_name": "Babette",
+                    "last_name": "Bernier",
+                    "email": "frankie.quigley@rodriguez-oconnell.test",
+                    "address": "26905 Parker Keys, Stammchester, UT 70203-9546"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": "4",
+            "type": "customer_subscription",
+            "attributes": {
+              "status": "active",
+              "customer": {
+                "data": {
+                  "id": "1",
+                  "type": "customer",
+                  "attributes": {
+                    "first_name": "Abraham",
+                    "last_name": "Bauch",
+                    "email": "paul.boyer@walter.test",
+                    "address": "158 Emiko Islands, Lake Helenmouth, DE 27645"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": "5",
+            "type": "customer_subscription",
+            "attributes": {
+              "status": "inactive",
+              "customer": {
+                "data": {
+                  "id": "7",
+                  "type": "customer",
+                  "attributes": {
+                    "first_name": "Clifford",
+                    "last_name": "Block",
+                    "email": "lynell.luettgen@waelchi.test",
+                    "address": "Apt. 764 77708 Avery Glens, Port Barney, NC 52696-3638"
+                  }
+                }
+              }
+            }
+          },
+          {
+            "id": "6",
+            "type": "customer_subscription",
+            "attributes": {
+              "status": "active",
+              "customer": {
+                "data": {
+                  "id": "5",
+                  "type": "customer",
+                  "attributes": {
+                    "first_name": "Jenine",
+                    "last_name": "Christiansen",
+                    "email": "cherly.wisoky@walsh.example",
+                    "address": "770 Bonnie Lock, South Mindifurt, MT 63955"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "relationships": {
+      "teas": {
+        "data": [
+          {
+            "id": "1",
+            "type": "tea"
+          },
+          {
+            "id": "4",
+            "type": "tea"
+          },
+          {
+            "id": "6",
+            "type": "tea"
+          },
+          {
+            "id": "7",
+            "type": "tea"
+          }
+        ]
+      }
+    }
+  },
+  "included": [
+    {
+      "id": "1",
+      "type": "tea",
+      "attributes": {
+        "title": "Dianhong",
+        "description": "Et sequi blanditiis. Et ut sed. Magni consectetur vel.",
+        "brew_time": 5,
+        "image_url": "https://loremflickr.com/300/300"
+      }
+    },
+    {
+      "id": "4",
+      "type": "tea",
+      "attributes": {
+        "title": "Nilgiri",
+        "description": "Repudiandae doloremque qui. Eius fugit quibusdam. Earum doloremque cumque.",
+        "brew_time": 7,
+        "image_url": "https://loremflickr.com/300/300"
+      }
+    },
+    {
+      "id": "6",
+      "type": "tea",
+      "attributes": {
+        "title": "Chinese Knot-Weed",
+        "description": "At neque non. Optio consequatur impedit. Odio nam est.",
+        "brew_time": 5,
+        "image_url": "https://loremflickr.com/300/300"
+      }
+    },
+    {
+      "id": "7",
+      "type": "tea",
+      "attributes": {
+        "title": "Darjeeling",
+        "description": "Eius blanditiis sit. Est non incidunt. Libero unde rerum.",
+        "brew_time": 8,
+        "image_url": "https://loremflickr.com/300/300"
+      }
+    }
+  ]
+}

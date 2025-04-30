@@ -2,7 +2,7 @@ import "./DetailedSubscription.css";
 
 function Subscription({ title, price, image_url }) {
   return (
-    <section className="sub-section">
+    <section className="sub-section" data-cy="sub-section">
       <h2>Subscription Details</h2>
       <img
         src={image_url}

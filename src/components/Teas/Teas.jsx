@@ -15,7 +15,7 @@ function Teas({ teas }) {
   });
 
   return (
-    <section className="teas-section">
+    <section className="teas-section" data-cy="teas-section">
       <h2>Teas Included</h2>
       <div>{teaComponents}</div>
     </section>

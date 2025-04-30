@@ -34,7 +34,14 @@ function Home({ sort }) {
     return <h2>Loading...</h2>;
   }
 
-  return <section className="subscriptions-container">{subComponents}</section>;
+  return (
+    <section
+      className="subscriptions-container"
+      data-cy="subscriptions-container"
+    >
+      {subComponents}
+    </section>
+  );
 }
 
 export default Home;

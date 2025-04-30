@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "id": "4",
+      "type": "subscription",
+      "attributes": {
+        "title": "eveniet",
+        "price": 92.23,
+        "image_url": "https://loremflickr.com/300/300"
+      },
+      "relationships": {}
+    },
+    {
+      "id": "9",
+      "type": "subscription",
+      "attributes": {
+        "title": "reprehenderit",
+        "price": 88.02,
+        "image_url": "https://loremflickr.com/300/300"
+      },
+      "relationships": {}
+    },
+    {
+      "id": "1",
+      "type": "subscription",
+      "attributes": {
+        "title": "commodi",
+        "price": 83.12,
+        "image_url": "https://loremflickr.com/300/300"
+      },
+      "relationships": {}
+    },
+    {
+      "id": "2",
+      "type": "subscription",
+      "attributes": {
+        "title": "sunt",
+        "price": 49.94,
+        "image_url": "https://loremflickr.com/300/300"
+      },
+      "relationships": {}
+    },
+    {
+      "id": "3",
+      "type": "subscription",
+      "attributes": {
+        "title": "ab",
+        "price": 46.97,
+        "image_url": "https://loremflickr.com/300/300"
+      },
+      "relationships": {}
+    },
+    {
+      "id": "5",
+      "type": "subscription",
+      "attributes": {
+        "title": "alias",
+        "price": 44.97,
+        "image_url": "https://loremflickr.com/300/300"
+      },
+      "relationships": {}
+    },
+    {
+      "id": "6",
+      "type": "subscription",
+      "attributes": {
+        "title": "deserunt",
+        "price": 44.14,
+        "image_url": "https://loremflickr.com/300/300"
+      },
+      "relationships": {}
+    },
+    {
+      "id": "7",
+      "type": "subscription",
+      "attributes": {
+        "title": "numquam",
+        "price": 40.1,
+        "image_url": "https://loremflickr.com/300/300"
+      },
+      "relationships": {}
+    },
+    {
+      "id": "8",
+      "type": "subscription",
+      "attributes": {
+        "title": "rerum",
+        "price": 38.27,
+        "image_url": "https://loremflickr.com/300/300"
+      },
+      "relationships": {}
+    },
+    {
+      "id": "10",
+      "type": "subscription",
+      "attributes": {
+        "title": "neque",
+        "price": 24.36,
+        "image_url": "https://loremflickr.com/300/300"
+      },
+      "relationships": {}
+    }
+  ]
+}
