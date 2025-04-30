@@ -1,12 +1,44 @@
-# React + Vite
+# Tea Subscription
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This take-home coding challenge is designed to reach MVP for an admin panel at a company that sells a tea subscription service. As the user, you can view all subscriptions, sort them by price (ascending or descending), get detailed information on a particular subscription (including the teas and customers who purchased it), and even cancel and reactivate particular customers' subscriptions with the click of a button!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Notable Technologies
 
-## Expanding the ESLint configuration
+- React
+- React Router
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Check out the backend API repo [here!](https://github.com/JarenGarman/tea_subscription_api)
+
+## Running Locally
+
+### Requirements
+
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+### Setup Steps
+
+1. Clone the repo to your machine: `git clone https://github.com/JarenGarman/tea_subscription_fe.git`
+2. Open the directory: `cd tea_subscription_fe`
+3. Install required packages: `npm install`
+4. Start the Vite server: `npm run dev`
+5. Open your web browser to the local path: [http://localhost:5173/](http://localhost:5173/)
+
+## Highlights/GIFs
+
+### Main Page
+
+![Main Page & Sort](public/main_sort_flow.webp)
+
+### Detailed Page
+
+![Detailed Page](public/detailed_flow.webp)
+
+## Contributors
+
+### Jaren Garman
+
+- [LinkedIn](https://www.linkedin.com/in/jarengarman/)
+- [GitHub](https://github.com/JarenGarman)
