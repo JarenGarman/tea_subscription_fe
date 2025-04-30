@@ -110,6 +110,7 @@ describe("Main Page", () => {
       .find("article")
       .first()
       .click()
+      .wait("@getSub")
 
       .url()
       .should("eq", "http://localhost:5173/subscriptions/1");
