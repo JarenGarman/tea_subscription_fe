@@ -19,7 +19,7 @@ function CustomerSubscription({ id, initialStatus, customer }) {
 
   function buttonText() {
     if (status === "active") {
-      return "Deactivate";
+      return "Cancel";
     } else {
       return "Reactivate";
     }

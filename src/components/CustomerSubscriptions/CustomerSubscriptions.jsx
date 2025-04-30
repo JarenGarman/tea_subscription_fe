@@ -14,7 +14,7 @@ function CustomerSubscriptions({ subs }) {
   });
 
   return (
-    <section className="customer-subs">
+    <section className="customer-subs" data-cy="customer-subs">
       <h2>Customers</h2>
       <div>{subComponents}</div>
     </section>

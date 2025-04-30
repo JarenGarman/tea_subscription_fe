@@ -86,4 +86,56 @@ describe("Detailed Page", () => {
         "Eius blanditiis sit. Est non incidunt. Libero unde rerum."
       );
   });
+
+  it("Displays subscription customers", () => {
+    cy.getBySel("customer-subs")
+      .find(".customer-name")
+      .first()
+      .should("contain", "Kaley Hand")
+
+      .getBySel("customer-subs")
+      .find(".status")
+      .first()
+      .should("contain", "Inactive")
+
+      .getBySel("customer-subs")
+      .find(".toggle-status")
+      .first()
+      .should("contain", "Reactivate")
+
+      .getBySel("customer-subs")
+      .find(".customer-email")
+      .first()
+      .should("contain", "melina@terry-stamm.example")
+
+      .getBySel("customer-subs")
+      .find(".customer-address")
+      .first()
+      .should("contain", "3343 Solomon Ridge, Hyattchester, CO 36994-5015")
+
+      .getBySel("customer-subs")
+      .find(".customer-name")
+      .last()
+      .should("contain", "Jenine Christiansen")
+
+      .getBySel("customer-subs")
+      .find(".status")
+      .last()
+      .should("contain", "Active")
+
+      .getBySel("customer-subs")
+      .find(".toggle-status")
+      .last()
+      .should("contain", "Cancel")
+
+      .getBySel("customer-subs")
+      .find(".customer-email")
+      .last()
+      .should("contain", "cherly.wisoky@walsh.example")
+
+      .getBySel("customer-subs")
+      .find(".customer-address")
+      .last()
+      .should("contain", "770 Bonnie Lock, South Mindifurt, MT 63955");
+  });
 });
