@@ -38,4 +38,34 @@ describe("Main Page", () => {
       .last()
       .should("contain", "$24.36");
   });
+
+  it("Displays subscriptions sorted by price", () => {
+    cy.intercept("GET", "/api/v1/subscriptions?sort_by_price=desc", {
+      fixture: "subs_pr_desc",
+    })
+      .as("getSubsDesc")
+      .getBySel("sort-select")
+      .select("Price: High to Low")
+      .wait("@getSubsDesc")
+
+      .getBySel("subscriptions-container")
+      .find(".sub-title")
+      .first()
+      .should("contain", "eveniet")
+
+      .getBySel("subscriptions-container")
+      .find(".sub-price")
+      .first()
+      .should("contain", "$92.23")
+
+      .getBySel("subscriptions-container")
+      .find(".sub-title")
+      .last()
+      .should("contain", "neque")
+
+      .getBySel("subscriptions-container")
+      .find(".sub-price")
+      .last()
+      .should("contain", "$24.36");
+  })
 });
