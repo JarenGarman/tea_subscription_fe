@@ -100,4 +100,18 @@ describe("Main Page", () => {
       .last()
       .should("contain", "$92.23");
   });
+
+  it("Moves to detailed page when clicking on a subscription", () => {
+    cy.intercept("GET", "/api/v1/subscriptions/1", {
+      fixture: "detailed_sub",
+    })
+      .as("getSub")
+      .getBySel("subscriptions-container")
+      .find("article")
+      .first()
+      .click()
+
+      .url()
+      .should("eq", "http://localhost:5173/subscriptions/1");
+  });
 });
