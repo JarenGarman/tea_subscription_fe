@@ -138,4 +138,48 @@ describe("Detailed Page", () => {
       .last()
       .should("contain", "770 Bonnie Lock, South Mindifurt, MT 63955");
   });
+
+  it("Can cancel a subscription", () => {
+    cy.intercept("PATCH", "/api/v1/customer_subscriptions/6", {
+      fixture: "cancel_sub",
+    })
+      .as("cancelSub")
+      .getBySel("customer-subs")
+      .find(".toggle-status")
+      .last()
+      .click()
+      .wait("@cancelSub")
+
+      .getBySel("customer-subs")
+      .find(".status")
+      .last()
+      .should("contain", "Inactive")
+
+      .getBySel("customer-subs")
+      .find(".toggle-status")
+      .last()
+      .should("contain", "Reactivate");
+  });
+
+  it("Can reactivate a subscription", () => {
+    cy.intercept("PATCH", "/api/v1/customer_subscriptions/1", {
+      fixture: "reactivate_sub",
+    })
+      .as("cancelSub")
+      .getBySel("customer-subs")
+      .find(".toggle-status")
+      .first()
+      .click()
+      .wait("@cancelSub")
+
+      .getBySel("customer-subs")
+      .find(".status")
+      .first()
+      .should("contain", "Active")
+
+      .getBySel("customer-subs")
+      .find(".toggle-status")
+      .first()
+      .should("contain", "Cancel");
+  });
 });
