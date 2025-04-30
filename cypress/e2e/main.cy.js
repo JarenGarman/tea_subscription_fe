@@ -3,7 +3,9 @@ describe("Main Page", () => {
     cy.intercept("GET", "/api/v1/subscriptions", { fixture: "subs" })
       .as("getSubs")
       .visit("http://localhost:5173/")
-      .wait("@getSubs");
+      .wait("@getSubs")
+      .url()
+      .should("eq", "http://localhost:5173/");
   });
 
   it("Displays header with title and sort", () => {
