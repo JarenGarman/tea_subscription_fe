@@ -39,7 +39,7 @@ describe("Main Page", () => {
       .should("contain", "$24.36");
   });
 
-  it("Displays subscriptions sorted by price", () => {
+  it("Displays subscriptions sorted by price descending", () => {
     cy.intercept("GET", "/api/v1/subscriptions?sort_by_price=desc", {
       fixture: "subs_pr_desc",
     })
@@ -67,5 +67,35 @@ describe("Main Page", () => {
       .find(".sub-price")
       .last()
       .should("contain", "$24.36");
-  })
+  });
+
+  it("Displays subscriptions sorted by price ascending", () => {
+    cy.intercept("GET", "/api/v1/subscriptions?sort_by_price=asc", {
+      fixture: "subs_pr_asc",
+    })
+      .as("getSubsAsc")
+      .getBySel("sort-select")
+      .select("Price: Low to High")
+      .wait("@getSubsAsc")
+
+      .getBySel("subscriptions-container")
+      .find(".sub-title")
+      .first()
+      .should("contain", "neque")
+
+      .getBySel("subscriptions-container")
+      .find(".sub-price")
+      .first()
+      .should("contain", "$24.36")
+
+      .getBySel("subscriptions-container")
+      .find(".sub-title")
+      .last()
+      .should("contain", "eveniet")
+
+      .getBySel("subscriptions-container")
+      .find(".sub-price")
+      .last()
+      .should("contain", "$92.23");
+  });
 });
