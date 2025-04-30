@@ -30,4 +30,22 @@ describe("Detailed Page", () => {
       .url()
       .should("eq", "http://localhost:5173/");
   });
+
+  it("Displays subscription details", () => {
+    cy.getBySel("sub-section")
+      .find("h2")
+      .should("contain", "Subscription Details")
+
+      .getBySel("sub-section")
+      .find("img")
+      .should("exist")
+
+      .getBySel("sub-section")
+      .find("h3")
+      .should("contain", "commodi")
+
+      .getBySel("sub-section")
+      .find("p")
+      .should("contain", "$83.12");
+  });
 });
